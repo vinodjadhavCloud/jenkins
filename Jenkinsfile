@@ -7,14 +7,14 @@ pipeline {
                         }
 
         }
-              stage('scm checkout') {
+              stage('scm checksssout') {
             steps {
                 echo "Hello master"         
                         }
 
         }
 
-              stage('scm checkout') {
+              stage('scm chesssssckout') {
             steps {
                 echo "Hello doctor"         
                         }

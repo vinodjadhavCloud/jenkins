@@ -7,6 +7,19 @@ pipeline {
                         }
 
         }
+              stage('scm checkout') {
+            steps {
+                echo "Hello master"         
+                        }
+
+        }
+
+              stage('scm checkout') {
+            steps {
+                echo "Hello doctor"         
+                        }
+
+        }
 
          }
         }

@@ -9,7 +9,8 @@ pipeline {
         }
               stage('scm checksssout') {
             steps {
-                echo "Hello master"         
+                echo "Hello master" 
+                sleep 60        
                         }
 
         }

@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('scm checkout') {
             steps {
-                echo "Hello"         
+                echo "Hello"
+                sh 'sudo su'  
+                sh 'touch okay '
+
                         }
 
         }

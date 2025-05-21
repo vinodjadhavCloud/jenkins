@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("scm checkout") {
             steps {
-                echo "hello vinod"            
+                sh 'echo "hello"'
                 }
 
         }
@@ -18,7 +18,7 @@ pipeline {
         stage('code compile')
         {
             steps {
-                     echo "hello22222"
+                     sh 'echo "hesssssssssllo"'
 
                 }
             }

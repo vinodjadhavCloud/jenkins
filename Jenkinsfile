@@ -3,11 +3,11 @@ pipeline {
     stages {
         stage("scm checkout") {
             steps {
-                echo "hello"            
+                echo "hello vinod"            
                 }
 
         }
-        
+
         stage('code validate')
         {
             steps {

@@ -1,12 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('scm checkout') {
+        stage("scm checkout") {
             steps {
+                echo "hello"            
+                }
 
-                echo "hello"
-            }
         }
+        
         stage('code validate')
         {
             steps {

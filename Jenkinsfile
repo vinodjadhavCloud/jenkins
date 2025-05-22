@@ -11,7 +11,7 @@ pipeline{
                 sh 'mvn compile'
             }
             stage('testonly'){
-                echo "hello,class file updated"
+                echo "hello,class file added"
             }
         }
     }                                               

@@ -7,12 +7,17 @@ pipeline{
                 }
             }
             stage ('validate and compile'){
-                withMaven(globalMavenSettingsConfig: '', jdk: 'JAVA_HOME', maven: 'MVN_HOME', mavenSettingsConfig: '', traceability: true) {
-                sh 'mvn compile'
-            }
-            stage('testonly'){
-                echo "hello,class file added"
-            }
-        }
-    }                                               
+                steps{
+                     withMaven(globalMavenSettingsConfig: '', jdk: 'JAVA_HOME', maven: 'MVN_HOME', mavenSettingsConfig: '', traceability: true) 
+                     sh 'mvn compile'                       
+                } 
+                } 
+                    
+
+            stage ('testonly'){
+                steps{
+                    echo "hello,class file added"
+                }                
+               }                                               
+}
 }

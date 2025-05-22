@@ -16,7 +16,7 @@ pipeline{
 
             stage ('testonly'){
                 steps{
-                    echo "hello,class file added"
+                    echo "hello,class"
                 }                
                }                                               
 }

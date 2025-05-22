@@ -1,6 +1,6 @@
 pipeline{
     agent any
-                stages {
+        stages {
             stage ('scm checkout'){
                 steps{
                     git branch: 'main', url: 'https://github.com/vinodjadhavCloud/jenkins.git'

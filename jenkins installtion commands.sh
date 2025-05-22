@@ -13,4 +13,4 @@ sudo yum install daemonize -y
 sudo yum install -y jenkins
 sudo service jenkins start
 sudo systemctl enable jenkins
-sudo touch vinod
+sudo touch newfile

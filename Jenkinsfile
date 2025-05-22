@@ -1,29 +1,17 @@
-pipeline {
-    agent any
-    stages {
-        stage('scm checkout') {
-            steps {
-                echo "Hello"
-                sh 'sudo su'  
-                sh 'touch okay '
+pipeline{
+    agent any{
+        stages{
+            stage ('scm checkout'){
+                steps{
+                    git branch: 'main', url: 'https://github.com/vinodjadhavCloud/jenkins.git'
+                }
+            }
+            stage ('validate and compile'){
+                withMaven(globalMavenSettingsConfig: '', jdk: 'JAVA_HOME', maven: 'MVN_HOME', mavenSettingsConfig: '', traceability: true) {
+                sh 'mvn compile '
+}
 
-                        }
-
+            }
         }
-              stage('scm checksssout') {
-            steps {
-                echo "Hello master" 
-                sleep 60        
-                        }
-
-        }
-
-              stage('scm chesssssckout') {
-            steps {
-                echo "Hello doctor"         
-                        }
-
-        }
-
-         }
-        }
+    }
+}
